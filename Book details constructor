@@ -1,0 +1,19 @@
+public class BookInfo {
+	String title;
+	String author;
+	int yearPublished;
+	public BookInfo(String title,String author,int yearPublished) {
+		this.title=title;
+		this.author=author;
+		this.yearPublished=yearPublished;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BookInfo b1 = new BookInfo("Excordism","Herry Jorge",1990);
+		System.out.println(b1.title);
+		System.out.println(b1.author);
+		System.out.println(b1.yearPublished);
+		
+	}
+
+}
