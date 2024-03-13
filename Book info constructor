@@ -1,0 +1,15 @@
+public class Book {
+	int pages;
+	String Bookname;
+public Book(int pages,String Bookname) {
+	this.pages=pages;
+	this.Bookname=Bookname;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Book s1 =new Book(200,"Jorge in town");
+System.out.println(s1.Bookname);
+System.out.println(s1.pages);
+	}
+
+}
