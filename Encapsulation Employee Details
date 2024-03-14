@@ -1,0 +1,28 @@
+
+public class EmployeInfo {
+
+	private int Id;
+	private String EmployeName;
+	private double Salary;
+	
+	public int getId() {
+		return Id;
+	}
+	public void setId(int Id) {
+		this.Id = Id;
+	}
+	public String getEmployeName() {
+		return EmployeName;
+	}
+	public void setEmployeName(String EmployeName) {
+		this.EmployeName = EmployeName;
+	}
+	public double getSalary() {
+		return Salary;
+	}
+	public void setSalary(double Salary) {
+		this.Salary = Salary;
+	}
+}
+
+
