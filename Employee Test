@@ -1,0 +1,15 @@
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EmployeInfo Details = new EmployeInfo();
+		Details.setId(23433324);
+		Details.setEmployeName("Harshal C. Ingle");
+		Details.setSalary(2500000.50);
+		
+		System.out.println("Employee ID is: "+Details.getId());
+		System.out.println("Employee Name is: "+Details.getEmployeName());
+		System.out.println("Employee Salary is: "+Details.getSalary());
+	}
+
+}
