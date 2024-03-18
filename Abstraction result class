@@ -1,0 +1,11 @@
+public class Result extends Test{
+    public static void main(String[] args){
+        Test test= new Result();
+        test.test();
+    }
+
+    @Override
+    void test() {
+        System.out.println("I am from abstract class.");
+    }
+}
