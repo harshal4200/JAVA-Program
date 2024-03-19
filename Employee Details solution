@@ -1,0 +1,15 @@
+public class Test {
+    public static void main(String[] args) {
+        Employee sc = new Employee();
+        sc.setID(2324004);
+        sc.setEmail("harshalingle795@gmail.com");
+        sc.setName("Harshal Ingle");
+        sc.setSalary(342000);
+        sc.setRank(1);
+        System.out.println(sc.getEmail());
+        System.out.println(sc.getID());
+        System.out.println(sc.getName());
+        System.out.println(sc.getRank());
+        System.out.println(sc.getSalary());
+    }
+}
