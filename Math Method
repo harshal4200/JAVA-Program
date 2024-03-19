@@ -1,0 +1,17 @@
+public class MathMethod {
+
+    public static void main(String[] args) {
+        System.out.println(Math.abs(-41.45));
+        System.out.println(Math.max(3,5));
+        System.out.println(Math.min(3,6));
+        System.out.println(Math.ceil(5504556.455));
+        System.out.println(Math.random());
+        System.out.println(Math.sqrt(16));
+        System.out.println(Math.pow(3,2));
+        System.out.println(Math.floor(34.99));
+        System.out.println(Math.round(9.1));
+        System.out.println(Math.log10(2));
+        System.out.println(Math.log(4));
+    }
+
+}
