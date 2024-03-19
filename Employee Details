@@ -1,0 +1,47 @@
+public class Employee {
+    private int ID;
+    private String Name;
+    private double Salary;
+    private String Email;
+    private int Rank;
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setSalary(double salary) {
+        Salary = salary;
+    }
+
+    public double getSalary() {
+        return Salary;
+    }
+
+    public void setRank(int rank) {
+        Rank = rank;
+    }
+
+    public int getRank() {
+        return Rank;
+    }
+}
