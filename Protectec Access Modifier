@@ -1,0 +1,22 @@
+public class AccessProtected {
+    protected String name ="Harshal";
+    public static void main(String[] args) {
+        AccessProtected sc = new AccessProtected();
+        System.out.println(sc.name);
+
+    }
+}
+//Same package different class
+public class Test {
+    public static void main(String[] args) {
+        AccessProtected sc = new AccessProtected();
+        System.out.println(sc.name);
+    }
+}
+//Different package within subclass
+public class Test {
+    public static void main(String[] args) {
+        AccessProtected sc = new AccessProtected();
+        System.out.println(sc.name);
+    }
+}
