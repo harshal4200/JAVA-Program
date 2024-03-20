@@ -1,0 +1,8 @@
+public class Student {
+    String name = "Harshal";
+
+    public static void main(String[] args) {
+        Student sc = new Student();
+        System.out.println(sc.name);
+    }
+}
