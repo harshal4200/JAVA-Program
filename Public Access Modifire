@@ -1,0 +1,13 @@
+//We can access from any were
+
+public class AccessPublic {
+   public String name="Harshal";
+    public int id = 33242;
+
+
+    public static void main(String[] args) {
+        AccessPublic sc = new AccessPublic();
+        System.out.println(sc.id);
+        System.out.println(sc.name);
+    }
+}
