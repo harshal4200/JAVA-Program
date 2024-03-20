@@ -6,3 +6,12 @@ public class Student {
         System.out.println(sc.name);
     }
 }
+
+//Using different class same Package
+
+public class Home {
+    public static void main(String[] args) {
+        Student sc = new Student();
+        System.out.println(sc.name);
+    }
+}
