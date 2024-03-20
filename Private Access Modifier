@@ -1,0 +1,8 @@
+public class Access1private {
+    private String bag = "American turister";
+
+    public static void main(String[] args) {
+        Access1private sc = new Access1private();
+        System.out.println(sc.bag);
+    }
+}
