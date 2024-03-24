@@ -1,0 +1,14 @@
+public class Add{
+    public static void main(String[] args) {
+        System.out.println("Hello world");
+        int a=4;int b=0;
+        try {
+            int c=a/b;
+            System.out.println(c);
+       }catch (ArithmeticException e){
+            System.out.println("can not devide by zero[");
+        }
+        System.out.println("THis is me.");
+
+    }
+}
