@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Test {
+    private String name;
+    private int age;
+    public Test(String name,int age){
+        this.age=age;
+        this.name=name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        int age = sc.nextInt();
+        Test s = new Test(name,age);
+        System.out.println("Name: "+s.getName()+", Age: "+s.getAge());
+        sc.close();
+    }
+}
