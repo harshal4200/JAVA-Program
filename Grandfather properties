@@ -1,0 +1,29 @@
+public class GrandFather {
+    public void looks(){
+        System.out.println("Goodlooking and handsome.");
+    }
+}
+class Father extends GrandFather {
+    public void hairs() {
+        System.out.println("Hair is Brown in color.");
+    }
+}
+class Son extends Father {
+    public void eyes(){
+        System.out.println("Eyes is blue in color.");
+    }
+}
+class Test{
+    public static void main(String[] args) {
+        Father c = new Father();
+        System.out.println("Father:");
+        c.hairs();
+        c.looks();
+        Son s = new Son();
+        System.out.println("Son:");
+        s.eyes();
+        s.looks();
+        s.hairs();
+
+    }
+}
