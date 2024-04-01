@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Parent{
+    public int addition(int a,int b){
+        int add = a+b;
+        return add;
+    }
+
+}
+class Child extends Parent{
+    public int addition(int a,int b){
+        int add=a+b;
+        return add;
+    }
+
+
+}
+class Test{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Parent p = new Parent();
+        Child c = new Child();
+        System.out.println(p.addition(a,b));
+        System.out.println(c.addition(a,b));
+
+    }
+}
