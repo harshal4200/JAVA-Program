@@ -1,0 +1,28 @@
+// Extends Threads
+
+public class TherdsJava extends Thread{
+    public static void main(String[] args) {
+        TherdsJava Thread=new TherdsJava();
+        Thread.start();
+        System.out.println("code is outside");
+    }
+    public void run(){
+        System.out.println("code is inside.");
+    }
+}
+
+//Implementation of Threads
+
+public class RunTherad implements Runnable{
+    public static void main(String[] args) {
+        Runnable thread=new RunTherad();
+        Thread thread1 = new Thread();
+        thread1.start();
+        System.out.println("Out side of class");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("Inside of class");
+    }
+}
