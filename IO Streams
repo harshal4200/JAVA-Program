@@ -1,0 +1,59 @@
+
+import java.io.*;
+import java.util.Scanner;
+
+public class IoPractice {
+    public static void main(String[] args) {
+        try {
+            File r=new File("MyName.txt");
+            if (r.createNewFile()){
+                System.out.println("Your file "+r.getName()+" created Successfully.");
+            }
+            else if(r.exists()){
+                System.out.println(r.getName()+" already exists");
+            }
+        }catch(IOException e){
+            System.out.println(e);
+            e.printStackTrace();
+        }
+        try {
+            File r=new File("MyName.txt");
+            if (r.delete()){
+                System.out.println(r.getName()+" Deleted successfully.");
+            }else {
+                System.out.println(r.getName()+" Already deleted.");
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            FileWriter r=new FileWriter("MyName.txt");
+            r.write("Hello my name is Harshal how are you.");
+            r.close();
+            System.out.println("Write successfully.");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            FileReader r=new FileReader("MyName.txt");
+            Scanner name=new Scanner(r);
+           while (name.hasNextLine()){
+               String R=name.nextLine();
+               System.out.println(R);
+               System.out.println("Read successfully");
+           }
+           r.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        File r=new File("MyName.txt");
+        if (r.exists()){
+            System.out.println("Length of file: "+r.getName());
+            System.out.println("Absolute path: "+r.getAbsolutePath());
+            System.out.println("Is file writable: "+r.canWrite());
+            System.out.println("Is file readable: "+r.canRead());
+            System.out.println("What is size of file: "+r.length());
+        }
+
+    }
+}
